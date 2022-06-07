@@ -1,9 +1,9 @@
 import Kim from "../components/Kim";
 
-const Article = ({ lastname }) => {
+const Article = () => {
   return (
     <article style={{ border: "solid 1px orange" }}>
-      <Kim lastname={lastname} />
+      <Kim />
     </article>
   );
 };

@@ -1,7 +1,11 @@
 import Khloé from "../components/Khloé";
 
-const Footer = ({lastname}) => {
-  return ( <div><Khloé lastname={lastname} /></div> );
-}
- 
+const Footer = () => {
+  return (
+    <div>
+      <Khloé />
+    </div>
+  );
+};
+
 export default Footer;

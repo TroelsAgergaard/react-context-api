@@ -1,5 +1,5 @@
-const Rob = ({lastname}) => {
-  return ( <p>Rob {lastname}</p> );
-}
- 
+const Rob = () => {
+  return <p>Rob</p>;
+};
+
 export default Rob;

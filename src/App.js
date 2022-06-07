@@ -10,7 +10,7 @@ function App() {
       <Wrapper>
         <Header lastname={lastname} />
         <Main lastname={lastname} />
-        <Footer lastname={lastname} age={37}/>
+        <Footer lastname={lastname} age={37} />
       </Wrapper>
     </div>
   );

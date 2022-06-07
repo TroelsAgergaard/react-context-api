@@ -1,5 +1,5 @@
-const Kim = ({ lastname }) => {
-  return <p>Kim {lastname}</p>;
+const Kim = () => {
+  return <p>Kim</p>;
 };
 
 export default Kim;
