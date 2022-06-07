@@ -2,8 +2,8 @@ import { useContext } from "react";
 import NameContext from "../context/context";
 
 const Kim = () => {
-  const lastname = useContext(NameContext);
-  return <p>Kim {lastname}</p>;
+  const { lastName } = useContext(NameContext);
+  return <p>Kim {lastName}</p>;
 };
 
 export default Kim;

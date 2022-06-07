@@ -2,8 +2,8 @@ import { useContext } from "react";
 import NameContext from "../context/context";
 
 const Rob = () => {
-  const lastname = useContext(NameContext)
-  return <p>Rob {lastname}</p>;
+  const { lastName } = useContext(NameContext);
+  return <p>Rob {lastName}</p>;
 };
 
 export default Rob;

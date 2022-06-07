@@ -6,20 +6,15 @@ import Footer from "./templates/Footer";
 import NameContext from "./context/context";
 
 function App() {
-  const [lastname, setLastname] = useState();
+  const [ lastName, setLastName ] = useState();
   return (
     <div className="App">
       <Header />
-      <NameContext.Provider value={lastname}>
+      <NameContext.Provider value={{ lastName, setLastName }}>
         <Wrapper>
           <Main />
           <Footer />
         </Wrapper>
-        <input
-          style={{ marginTop: "25px" }}
-          type="text"
-          onChange={(e) => setLastname(e.target.value)}
-        />
       </NameContext.Provider>
     </div>
   );
