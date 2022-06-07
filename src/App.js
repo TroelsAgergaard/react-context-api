@@ -1,3 +1,4 @@
+import { useContext, useState } from "react";
 import Wrapper from "./templates/Wrapper";
 import Header from "./templates/Header";
 import Main from "./templates/Main";
@@ -5,16 +6,21 @@ import Footer from "./templates/Footer";
 import NameContext from "./context/context";
 
 function App() {
-  const lastname = "Kardashian";
+  const [lastname, setLastname] = useState();
   return (
     <div className="App">
-      {/* <NameContext.Provider value=""> */}
-      <Wrapper>
-        <Header lastname={lastname} />
-        <Main lastname={lastname} />
-        <Footer lastname={lastname} />
-      </Wrapper>
-      {/* </NameContext.Provider> */}
+      <Header />
+      <NameContext.Provider value={lastname}>
+        <Wrapper>
+          <Main />
+          <Footer />
+        </Wrapper>
+        <input
+          style={{ marginTop: "25px" }}
+          type="text"
+          onChange={(e) => setLastname(e.target.value)}
+        />
+      </NameContext.Provider>
     </div>
   );
 }
